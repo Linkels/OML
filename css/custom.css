@@ -65,7 +65,7 @@ html, body {
 /* Fin de navbar */
 
 /* Navbar responsive */
-@media (max-width:767px) {
+@media all and (max-width:1200px) {
   .nav > .nav-btn {
     display: inline-block;
     position: absolute;
@@ -78,9 +78,7 @@ html, body {
     height: 50px;
     padding: 13px;
   }
-  .nav > .nav-btn > label:hover {
-    background-color: rgba(0, 0, 0, 0.3);
-  }
+
   .nav > .nav-btn > label > span {
     display: block;
     width: 25px;
@@ -91,23 +89,29 @@ html, body {
     position: absolute;
     display: block;
     width: 100%;
-    background-color: #333;
-    height: 0px;
+    background-color: #222222;
+    height: 100px;
     transition: all 0.3s ease-in;
-    overflow-y: hidden;
+    overflow-x: hidden;
     top: 50px;
     left: 0px;
   }
   .nav > .nav-links > a {
     display: block;
     width: 100%;
+    padding-left: 15px;
   }
   .nav > #nav-check:not(:checked) + .nav-links {
     height: 0px;
   }
   .nav > #nav-check:checked + .nav-links {
-    height: calc(100vh - 50px);
-    overflow-y: auto;
+    height: calc(30vh - 35px);
+    overflow-y: hidden;
+  }
+
+  .nav > .nav-header > a > img {
+    padding-top: 16px;
+    margin-left: 15px;
   }
 }
 /* fin de navbar responsive */
