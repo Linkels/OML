@@ -208,3 +208,17 @@ footer {
   }
 }
 /* fin de la navbar et get invo respon */
+
+/* back to top */
+#back-to-top {
+  text-align: right;
+  padding-right: 50px;
+}
+/* fin du back to top */
+
+.fa-stack {
+  border-radius: 50%;
+  background-color: #333333;
+  width: 150px;
+  height: 150px;
+}
